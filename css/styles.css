@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Generales*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    background-color: rgb(239, 239, 239);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav{
+    width: 100%;
+}
+.header__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;    
+}
+
+.nav__enlaces{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.header__img{
+    margin-left: 90px;
+    width: 130px;
+    height: 80px;
+}
+
+.footer{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.footer img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*Index*/
+.seccion1{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    display: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.seccion1__izq, .seccion1__der{
+    width: 50%;
+
+}
+
+.seccion1__der{
+    margin-left: 150px;
+}
+.seccion1__izq{
+    margin-left: 150px;
+}
+.seccion1__der img{
+    border-radius: 15px;
+    display: inline;
+}
+
+.seccion2{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    display: 0 auto;
+    margin-bottom: 1rem;
+}
+.seccion2__der, .seccion2__izq{
+    width: 50%;
+}
+
+.seccion2__izq img{
+    border-radius: 15px;
+}
+.seccion2__izq{
+    margin-left: 150px;
+}
+.seccion2__der{
+    margin-left: 150px;
+}
+
+.seccion3{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    display: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.seccion3__der, .seccion3__izq{
+    width: 50%;
+}
+.seccion3__izq{
+    margin-left: 150px;
+}
+.seccion3__der{
+    margin-left: 150px;
+}
+.seccion3__der img{
+    border-radius: 15px;
+}
+
+.button{
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+}
+
+.boton{
+    text-decoration: none;
+    color: black;
+}
+
+/*comienza contacto*/
+.contacto-seccion1{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    display: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contacto-seccion1__izq, .contacto-seccion1__der{
+    width: 50%;
+    display: inline;
+}
+
+.contacto-seccion1__der img{
+    width: 700px;
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 100px;
+}
+
+
+.contacto-seccion1__izq{
+    margin-left: 100px;
+    text-align: justify;
+}
+
+.contacto-seccion2{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    display: 0 auto;
+    margin-top: 1rem;
+}
+.contacto-seccion2__izq, .contacto-seccion2__der{
+    width: 50%;
+    display: inline;
+}
+
+.contacto-seccion2__izq{
+    margin-left: 100px;
+}
+
+.contacto-seccion2__der{
+    margin-left: 100px;
+    text-align: justify;
+}
+
+.contacto-mapa{
+    border-radius: 15px;
+    width: 600px;
+    height: 350px;
+}
+
+.contacto-seccion3{
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: 150px;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom:solid 1px black;
+    border-left: solid 1px black;
+    border-radius: 15px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Comienza Habitaciones*/
+
+.habitaciones__img{
+width: 500px;
+height: 350px;
+border-radius: 15px;
+}
+
+.classic-room{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.classic-room__izq{
+    padding-left: 7rem;
+}
+.classic-room__izq, .classic-room__der{
+    width: 50%;
+}
+
+.habitaciones{
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.habitaciones__izq{
+    padding-left: 7rem;
+}
+.habitaciones__izq, .habitaciones__der{
+    width: 50%;
+}
+.precio{
+    font-weight: bold;
+}
+
+/*Comienza Servicios*/
+
+.servicios__img{
+    height: 300px;
+    height: 300px;
+    display: block;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+.lounge{
+    display: flex;
+    align-items: center;
+}
+
+.lounge__izq{
+    padding-left: 7rem;
+    text-align: justify;
+}
+.lounge__der{
+    padding-left: 2rem;
+}
+.lounge__izq, .lounge__der{
+    width: 50%;
+}
+.spa{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.spa__der{
+    padding-left: 2rem;
+}
+.spa__izq, .spa__der{
+    width: 50%;
+}
+
+/*Comienza Reservas*/
+.reservas-titulo{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.formulario{
+    border-radius: 20px;
+    padding: 4rem;
+    margin: 2rem;
+}
+
+.reservas-items{
+    align-items: center;
+    text-align: justify;
+}
+
+
