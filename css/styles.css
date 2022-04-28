@@ -6,7 +6,8 @@
 /*Generales*/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: gold;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(81, 81, 81));
+    
 }
 ul{
     list-style: none;
@@ -24,22 +25,35 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
+
 .header__nav{
     width: 100%;
 }
+
+.header__lista a:hover{
+    background-color: #1d2f3d;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
 .header__lista{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
-    width: 100%;    
+    width: 100%;   
 }
 
 .nav__enlaces{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    padding: 20px;
+    color: #000;
+    transition: .3s ease-out;
 }
 .header__img{
     margin-left: 90px;
@@ -84,6 +98,13 @@ ul{
 .seccion1__der img{
     border-radius: 15px;
     display: inline;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.seccion1__der img:hover{
+    transform: scale(1.05);
+    
 }
 
 .seccion2{
@@ -99,6 +120,12 @@ ul{
 
 .seccion2__izq img{
     border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.seccion2__izq img:hover{
+    transform: scale(1.05);
+
 }
 .seccion2__izq{
     margin-left: 150px;
@@ -126,13 +153,24 @@ ul{
 }
 .seccion3__der img{
     border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
+.seccion3__der img:hover{
+    transform: scale(1.05);
 
+}
 .button{
     border-radius: 15px;
     font-size: 16px;
     text-align: center;
     padding: 15px 32px;
+    transition: transform 0.3s ease;    
+}
+.button:hover{
+    transform: scale(1.1);
+    background-color: rgb(164, 164, 164);
+    text-decoration: none;
 }
 
 .boton{
@@ -156,10 +194,14 @@ ul{
 }
 
 .contacto-seccion1__der img{
-    width: 700px;
+    width: 600px;
     height: 350px;
     border-radius: 15px;
     margin-left: 100px;
+    transition: transform 0.3s ease;
+}
+.contacto-seccion1__der img:hover{
+    transform: scale(1.05);
 }
 
 
@@ -198,11 +240,11 @@ ul{
 .contacto-seccion3{
     margin: 1rem;
     padding: 1rem;
-    margin-left: 150px;
-    border-top: solid 1px black;
-    border-right: solid 1px black;
-    border-bottom:solid 1px black;
-    border-left: solid 1px black;
+    margin-left: 75px;
+    border-top: solid 1px rgb(255, 255, 255);
+    border-right: solid 1px rgb(255, 255, 255);
+    border-bottom:solid 1px rgb(255, 255, 255);
+    border-left: solid 1px rgb(255, 255, 255);
     border-radius: 15px;
     max-width: 1200px;
     display: flex;
@@ -210,6 +252,7 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: rgb(211, 211, 211);
 }
 
 /*Comienza Habitaciones*/
@@ -218,6 +261,10 @@ ul{
 width: 500px;
 height: 350px;
 border-radius: 15px;
+transition: transform 0.3s ease;
+}
+.habitaciones__img:hover{
+    transform: scale(1.05);
 }
 
 .classic-room{
@@ -256,6 +303,10 @@ border-radius: 15px;
     display: block;
     padding: 1rem;
     border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+.servicios__img:hover{
+    transform: scale(1.05);
 }
 
 .lounge{
