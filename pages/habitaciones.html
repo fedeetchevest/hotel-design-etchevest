@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
 </head>
 <body>
     <header class="header">
@@ -26,74 +28,88 @@
 
 
     <main>
-        <section class="habitaciones">
-            <div class="habitaciones__izq">
-                <h1>Classic Room</h1>
-            <ul>
-                <li>30m²</li>
-                <li>Frigobar</li>
-                <li>Hidromasaje</li>
-                <li>TV 32'</li>
-                <li class="precio">(a partir de 54 usd + iva)</li>
-            </ul>
-            </div>
-            <div class="habitaciones__der">
-                <img class="habitaciones__img" src="../imagenes/classic-room.jpg" alt="classic-room">
-            </div>         
-        </section>
-    
-        <section class="habitaciones">
-            <div class="habitaciones__izq">
-                <h1>Junior Suite</h1>
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h1>Classic Room</h1>
                 <ul>
-                    <li>45m²</li>
+                    <li>30m²</li>
                     <li>Frigobar</li>
                     <li>Hidromasaje</li>
                     <li>TV 32'</li>
-                    <li>Vistas a la ciudad</li>
-                    <li class="precio">(a partir de 70 usd + iva)</li>
+                    <li class="precio">(a partir de 54 usd + iva)</li>
+                    <button><a type="button" class="btn btn-outline-dark" class="boton" href="reservas.html">Reservar</a></button>
                 </ul>
+                </div>
+                <div class="col seccion2__izq">
+                    <img class="img-fluid rounded img-thumbnail" src="../imagenes/classic-room.jpg" alt="classic-room">
+                </div>         
             </div>
-            <div class="habitaciones__der">
-                <img class="habitaciones__img" src="../imagenes/junior-suite.jpg" alt="junior-suite">
-            </div>           
+        </section>              
+    
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h1>Junior Suite</h1>
+                    <ul>
+                        <li>45m²</li>
+                        <li>Frigobar</li>
+                        <li>Hidromasaje</li>
+                        <li>TV 32'</li>
+                        <li>Vistas a la ciudad</li>
+                        <li class="precio">(a partir de 70 usd + iva)</li>
+                        <button><a type="button" class="btn btn-outline-dark" class="boton" href="reservas.html">Reservar</a></button>
+                    </ul>
+                </div>
+                <div class="col seccion2__izq">
+                    <img class="img-fluid rounded img-thumbnail" src="../imagenes/junior-suite.jpg" alt="junior-suite">
+                </div>           
+            </section>
+            </div>
+    
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h1>Deluxe Suite</h1>
+                    <ul>
+                        <li>55m²</li>
+                        <li>Frigobar</li>
+                        <li>Hidromasaje</li>
+                        <li>TV 50'</li>
+                        <li>Vistas a la ciudad</li>
+                        <li>Cafetera Nespresso</li>
+                        <li class="precio">(a partir de 90 usd + iva)</li>
+                        <button><a type="button" class="btn btn-outline-dark" class="boton" href="reservas.html">Reservar</a></button>
+                    </ul>
+                </div>
+                <div class="col seccion2__izq">
+                    <img class="img-fluid rounded img-thumbnail" src="../imagenes/deluxe-suite.jpg" alt="deluxe-suite">
+                </div>
+            </div>
+                        
         </section>
     
-        <section class="habitaciones">
-            <div class="habitaciones__izq">
-                <h1>Deluxe Suite</h1>
-                <ul>
-                    <li>55m²</li>
-                    <li>Frigobar</li>
-                    <li>Hidromasaje</li>
-                    <li>TV 50'</li>
-                    <li>Vistas a la ciudad</li>
-                    <li>Cafetera Nespresso</li>
-                    <li class="precio">(a partir de 90 usd + iva)</li>
-                </ul>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Terrace Suite</h1>
+                    <ul>
+                        <li>75m²</li>
+                        <li>Terraza privada</li>
+                        <li>Frigobar</li>
+                        <li>TV 50'</li>
+                        <li>Jaccuzzi</li>
+                        <li>Hidromasaje</li>
+                        <li>Cafetera Nespresso</li>
+                        <li class="precio">(a partir de 110 usd + iva)</li>
+                        <button><a type="button" class="btn btn-outline-dark" class="boton" href="reservas.html">Reservar</a></button>
+                    </ul>
+                </div>
+                <div class="col seccion2__izq">
+                    <img class="img-fluid rounded img-thumbnail" src="../imagenes/terrace-suite.jpg" alt="terrace-suite">
+                </div>  
             </div>
-            <div class="habitaciones__der">
-                <img class="habitaciones__img" src="../imagenes/deluxe-suite.jpg" alt="deluxe-suite">
-            </div>            
-        </section>
-    
-        <section class="habitaciones">
-            <div class="habitaciones__izq">
-                <h1>Terrace Suite</h1>
-                <ul>
-                    <li>75m²</li>
-                    <li>Terraza privada</li>
-                    <li>Frigobar</li>
-                    <li>TV 50'</li>
-                    <li>Jaccuzzi</li>
-                    <li>Hidromasaje</li>
-                    <li>Cafetera Nespresso</li>
-                    <li class="precio">(a partir de 110 usd + iva)</li>
-                </ul>
-            </div>
-            <div class="habitaciones__der">
-                <img class="habitaciones__img" src="../imagenes/terrace-suite.jpg" alt="terrace-suite">
-            </div>  
+            
         </section>
     </main>
     

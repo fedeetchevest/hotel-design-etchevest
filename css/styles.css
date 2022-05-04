@@ -5,9 +5,7 @@
 }
 /*Generales*/
 body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(208, 208, 208);
-    
+    font-family: 'Montserrat', sans-serif;    
 }
 ul{
     list-style: none;
@@ -77,7 +75,6 @@ ul{
 button{
     border: 1px;
 }
-
 
 
 /*Index*/

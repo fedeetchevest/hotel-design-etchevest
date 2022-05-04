@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
     <header class="header">
@@ -24,25 +25,34 @@
         </nav>
     </header>
 <main>
-    <section class="lounge">
-        <div class="lounge__izq">
-            <h1>Design Lounge and Bar</h1>
-            <p>Disfrute los platos exclusivos de nuestro chef, conozca la gastronomia tipica Argentina, y lo mejor de la gastronomia internacional</p>
-        </div>
-        <div class="lounge__der">
-            <img class="servicios__img" src="../imagenes/comida-1.jpg" alt="comida-1">
-            <img class="servicios__img" src="../imagenes/comida-2.jpg" alt="comida-2">
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-5">
+                <h1>Design Lounge and Bar</h1>
+                <p>Disfrute los platos exclusivos de nuestro chef, conozca la gastronomia tipica Argentina, y lo mejor de la gastronomia internacional</p>
+                <button><a type="button" class="btn btn-outline-dark" class="boton" href="reservas.html">Reservar</a></button>
+            </div>
+            <div class="col seccion2__izq">
+                <img class="img-fluid rounded img-thumbnail" src="../imagenes/comida-1.jpg" alt="comida-1">
+            </div>
+            <div class="col seccion2__izq">
+                <img class="img-fluid rounded img-thumbnail" src="../imagenes/comida-2.jpg" alt="comida-2">
+            </div>
         </div>
     </section>
 
-    <section class="spa">
-        <div class="spa__izq">
-            <h1>Design Health Club</h1>
-            <p>Relájese en un espacio pensado para descansar. Disfrute de nuestros Saunas, piscina climatizada, jaccuzzi y gimnasio</p>
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-5">
+                <h1>Design Health Club</h1>
+                <p>Relájese en un espacio pensado para descansar. Disfrute de nuestros Saunas, piscina climatizada, jaccuzzi y gimnasio</p>
+                <button><a type="button" class="btn btn-outline-dark" class="boton" href="reservas.html">Reservar</a></button>
+            </div>
+            <div class="col seccion2__izq">
+                <img class="simg-fluid rounded img-thumbnail" src="../imagenes/spa-1.jpg" alt="spa-1">
+            </div>
         </div>
-        <div class="spa__der">
-            <img class="servicios__img" src="../imagenes/spa-1.jpg" alt="spa-1">
-        </div>
+        
     </section>
 </main>
 

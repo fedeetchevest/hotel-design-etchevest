@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
     <header class="header">
@@ -25,85 +26,62 @@
     </header>
 
     <main>
-        <section>
-            <h1 class="reservas-titulo">Formulario de reservas</h1>
-            <form action="">
-                <fieldset class="formulario">
-                    <div>
-                        <ul class="reservas-items">
-                            <div>
-                                <li>
-                                        <label for="nombre">Nombre y Apellido</label>
-                                        <input required type="text" id="nombre" placeholder="Ingrese su nombre">
-                                </li>
-                            </div>
-                            
-                            <div>
-                                <li>
-                                        <label for="dni">Número de documento</label>
-                                        <input required type="number" id="dni" placeholder="DNI">
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                        <label for="fecnac">Fecha de nacimiento</label>
-                                        <input required type="date" id="fecnac">                    
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                        <label for="pax">Cantidad de pasajeros</label>
-                                        <input required type="number" id="pax" placeholder="Cantidad de pasajeros">
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                        <label for="correo">Correo electrónico</label>
-                                        <input required type="text" id="correo" placeholder="Correo electrónico">
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                    <label for="hab">Categoría</label>
-                                    <select name="hab" id="hab">
-                                        <option value="Classic Room">Classic Room</option>
-                                        <option value="Junior Suite">Junior Suite</option>
-                                        <option value="Deluxe Suite">Deluxe Suite</option>
-                                        <option value="Terrace Suite">Terrace Suite</option>
-                                    </select>
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                        <label for="ci">Check In</label>
-                                        <input required type="date" id="ci">
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                        <label for="co">Check Out</label>
-                                        <input required type="date" id="co">                           
-                                </li>
-                            </div>
-        
-                            <div>
-                                <li>
-                                    <label for="coment">Comentarios</label>
-                                    <textarea name="coment" id="coment" cols="30" rows="5" placeholder="Peticiones especiales"></textarea>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                    <button>Enviar</button>
-                </fieldset>
-            </form> 
-        </section>
+        <h1 class="container text-decoration-underline mb-4">Formulario de reservas</h1>
+        <form class="container">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y Apellido</label>
+              <input type="text" required class="form-control" id="nombre" placeholder="Ingrese su nombre" aria-describedby="emailHelp">
+              <div></div>
+            </div>
+            <div class="mb-3">
+              <label for="dni" class="form-label">DNI / Pasaporte</label>
+              <input type="text" required class="form-control" id="dni" placeholder="Ingrese DNI / Pasaporte">
+            </div>
+    
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" required class="form-control" id="email" placeholder="Ingrese correo electrónico">
+              </div>
+    
+            <div class="mb-3">
+                <label for="fecnac">Fecha de nacimiento</label>
+                <input class="form-control" type="date" required id="fecnac">
+            </div>
+    
+            <div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Cantidad de pasajeros</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+            </div>
+    
+            <div class="mt-4 mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Categoría de habitacion</option>
+                    <option value="1">Classic Room</option>
+                    <option value="2">Junior Suite</option>
+                    <option value="3">Deluxe Suite</option>
+                    <option value="4">Terrace Suite</option>
+                  </select>
+              </div>
+    
+              <div class="mb-3">
+                <label for="ci">Check In</label>
+                <input class="form-control" type="date" required id="ci">
+            </div>
+    
+            <div class="mb-3">
+                <label for="co">Check Out</label>
+                <input class="form-control" type="date" required id="co">
+            </div>
+    
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </main>
 
     <footer class="footer">
