@@ -1,28 +1,7 @@
-.main__button{
-    a{
-        width: 100%;
-        text-decoration: none;
-        color: black; 
-    }
-}
+@import "./components/variables.scss";
+@import "./components/global.scss";
+@import "./components/index.scss";
+@import "./components/contacto.scss";
+@import "./components/habitaciones.scss";
+@import "./components/servicios.scss";
 
-.main__button:hover{
-    a{
-        color: white;
-    }
-    
-}
-
-.main__img{
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-}
-.main__img:hover{
-    transform: scale(1.05);
-}
-
-.contacto-mapa{
-    border-radius: 15px;
-    width: 500px;
-    height: 350px;
-}

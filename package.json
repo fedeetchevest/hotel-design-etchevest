@@ -1,17 +1,17 @@
 {
   "name": "hotel-design-etchevest",
   "version": "1.0.0",
-  "description": "incluyendo sass al proyecto",
+  "description": "Proyecto para CoderHouse",
   "main": "index.js",
   "scripts": {
-    "start": "sass style.scss ./estilos.css -w --no-source-map -s compressed"
-    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass style.scss ./css/style.css -w --no-source-map -s compressed"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fedeetchevest/hotel-design-etchevest.git"
   },
-  "author": "Federico",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fedeetchevest/hotel-design-etchevest/issues"

@@ -1,0 +1,46 @@
+
+.contacto-mapa{
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+}
+  
+.contacto li{
+  list-style: none;
+}
+.contacto li a{
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__tittle{
+  @extend .index__tittle;
+}
+
+.contact__text{
+  @extend .index__text;
+}
+
+.contact__img{
+  @extend .main__img;
+}
+
+$rrss: (
+    tripadvisor: #1d1d1d,
+    facebook: #0913c6,
+    instagram: #b42dc9,
+  );
+  
+  @each $name, $color in $rrss {
+    .#{$name} {
+      background-color: $color;
+      margin-top: 5px;
+      padding: 5px;
+      color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      display: flex;
+    }
+  }
+
+  

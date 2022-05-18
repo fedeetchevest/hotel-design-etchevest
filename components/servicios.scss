@@ -1,0 +1,11 @@
+.servicios__tittle{
+    @extend .index__tittle;
+  }
+  
+  .servicios__text{
+    @extend .index__text;
+  }
+  
+  .servicios__img{
+    @extend .main__img;
+  }

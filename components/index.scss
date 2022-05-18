@@ -1,0 +1,17 @@
+
+.index__img{
+    @extend .main__img;
+}
+
+.index__button{
+    @extend .main__button;
+}
+
+.index__tittle{
+    @include textaling(center, "no")
+}
+
+.index__text{
+    @include textaling(center, "yes")
+
+}

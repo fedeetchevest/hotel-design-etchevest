@@ -1,0 +1,8 @@
+.room__tittle{
+    @extend .index__tittle;
+}
+li{
+    list-style: none;
+    @extend .index__text;
+}
+
