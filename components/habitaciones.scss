@@ -6,3 +6,103 @@ li{
     @extend .index__text;
 }
 
+@media (min-width: 350px){
+    .room__grid{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 300px 190px;
+        grid-template-areas: 
+        "ele1"
+        "ele2";
+        justify-content: center;
+        align-items: center;
+    }
+    .rgrid__1{
+        grid-area: ele1;
+
+        .room__tittle{
+            font-size: 25px;
+        }
+        .room__list li{
+            font-size: 15px;
+        }
+    }
+    .rgrid__2{
+        grid-area: ele2;
+        display: flex;
+        justify-content: center;
+        
+        .room__img{
+            width: 100x;
+            height: 150px;
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .rgrid__2{
+        .room__img{
+            width: 350px;
+            height: 200px;
+        }
+    }
+    .rgrid__1{
+        .room__tittle{
+            font-size: 35px;
+        }
+        .room__list li{
+            font-size: 20px;
+        }
+    }
+    .room__grid{
+        grid-template-rows: 400px 200px;
+    }
+}
+
+@media (min-width: 768px){
+    .rgrid__2{
+        .room__img{
+            width: 450px;
+            height: 300px;
+        }
+    }
+    .rgrid__1{
+        .room__tittle{
+            font-size: 50px;
+        }
+        .room__list li{
+            font-size: 25px;
+        }
+    }
+    .room__grid{
+        grid-template-rows: 450px 300px;
+    }
+}
+
+@media (min-width: 992px){
+    .room__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 450px;
+        grid-template-areas: "ele1 ele2";
+    }
+}
+
+@media (min-width: 1200px){
+    .room__grid{
+        grid-template-rows: 450px;
+    }
+    .rgrid__1{
+        .room__tittle{
+            font-size: 45px;
+        }
+        .room__list li{
+            font-size: 25px;
+        }
+    }
+    .grid__2{
+        .room__img{
+            width: 500px;
+            height: 300px;
+        }
+    }
+}

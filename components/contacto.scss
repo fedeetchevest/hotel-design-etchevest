@@ -43,4 +43,101 @@ $rrss: (
     }
   }
 
+  @media (min-width: 350px){
+    .cgrid__1{
+      grid-area: ele1;
+      .contact__tittle{
+          font-size: 25px;
+      }
+      .contact__text{
+          font-size: 15px;
+      }      
+  }
+  .cgrid__2{
+      grid-area: ele2;
+      display: flex;
+      justify-content: center;
+      .contacto-mapa{
+          width: 320px;
+          height: 200px;
+      }
+      .contact__img{
+        width: 300px;
+        height: 150px;
+      }
+  }
+  .contact__grid{
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: 180px 280px;
+      grid-template-areas: 
+      "ele1"
+      "ele2";
+      justify-content: center;
+      align-items: center;
+
+  }
+  }
+
+  @media (min-width: 576px){
+    .cgrid__2{
+      .contact__img{
+          width: 350px;
+          height: 200px;
+      }
+      .contacto-mapa{
+        width: 350px;
+        height: 200px;
+      }
+  }
+  .cgrid__1{
+      .index__tittle{
+          font-size: 35px;
+      }
+      .index__text{
+          font-size: 20px;
+      }
+  }
+
+  .contact__grid{
+      grid-template-rows: 200px 280px;
+  }
+  }
+
+  @media (min-width: 768px){
+    .cgrid__2{
+      .contact__img{
+          width: 450px;
+          height: 250px;
+      }
+      .contacto-mapa{
+        width: 400px;
+        height: 250px;
+      }
+  }
+  .cgrid__1{
+      .contact__tittle{
+          font-size: 40px;
+      }
+      .contact__text{
+          font-size: 25px;
+      }
+  }
+  .contact__grid{
+      grid-template-rows: 250px 300px;
+  }
+  }
+
+  @media (min-width: 992px){
+    .contact__grid{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 360px;
+      grid-template-areas: "ele1 ele2";
+  }
+  .contact__grid{
+    grid-template-rows: 400px;
+  }
+  }
+
+
   

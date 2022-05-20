@@ -1,6 +1,7 @@
-body{
-    max-width: 1200px;
-    margin: 40px auto;
+*{
+    margin: 0;
+    padding: 0;
+    
 }
 
 body li{
@@ -43,7 +44,5 @@ body li{
     @if ($texto != "yes"){
         font-size: 40px;
         color: $colorPrimary;
-    }
-    
-    
+    }   
 }

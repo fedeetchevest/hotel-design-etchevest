@@ -15,3 +15,105 @@
     @include textaling(center, "yes")
 
 }
+
+@media (min-width: 350px){
+    
+    .grid__1{
+        grid-area: ele1;
+
+        .index__tittle{
+            font-size: 25px;
+        }
+        .index__text{
+            font-size: 15px;
+        }
+        
+    }
+    .grid__2{
+        grid-area: ele2;
+        display: flex;
+        justify-content: center;
+        .index__img{
+            width: 250px;
+            height: 160px;
+        }
+    }
+    .index__grid{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 150px 200px;
+        grid-template-areas: 
+        "ele1"
+        "ele2";
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+@media (min-width: 576px){
+    .grid__2{
+        .index__img{
+            width: 350px;
+            height: 200px;
+        }
+    }
+    .grid__1{
+        .index__tittle{
+            font-size: 35px;
+        }
+        .index__text{
+            font-size: 20px;
+        }
+    }
+
+    .index__grid{
+        grid-template-rows: 200px 250px;
+    }
+}
+@media (min-width: 768px){
+    .grid__2{
+        .index__img{
+            width: 400px;
+            height: 250px;
+        }
+    }
+    .grid__1{
+        .index__tittle{
+            font-size: 40px;
+        }
+        .index__text{
+            font-size: 25px;
+        }
+    }
+    .index__grid{
+        grid-template-rows: 250px 290px;
+    }
+}
+
+@media (min-width: 992px){
+    .index__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 360px;
+        grid-template-areas: "ele1 ele2";
+    }
+}
+
+@media (min-width: 1200px){
+    .index__grid{
+        grid-template-rows: 400px;
+    }
+    .grid__1{
+        .index__tittle{
+            font-size: 45px;
+        }
+        .index__text{
+            font-size: 25px;
+        }
+    }
+    .grid__2{
+        .index__img{
+            width: 500px;
+            height: 300px;
+        }
+    }
+}
